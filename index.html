@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aprontamento Especial 💌</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef5ff;
+    transition: background 1s ease;
+}
+
+/* CONTAINER */
+.container{
+    text-align:center;
+}
+
+/* GATINHO INICIAL */
+#gatinhoIntro{
+    width:200px;
+    margin-bottom:15px;
+}
+
+/* BOTÃO */
+button{
+    padding:14px 28px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#012868;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* CARTA */
+#carta{
+    display:none;
+    max-width:700px;
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+#texto{
+    font-size:20px;
+    line-height:1.7;
+    white-space:pre-line;
+    color:#333;
+}
+
+/* FINAL */
+#final{
+    display:none;
+    margin-top:20px;
+}
+
+#gatinhoFinal{
+    width:220px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- GATO INICIAL -->
+    <img
+        id="gatinhoIntro"
+        src="https://media1.tenor.com/m/njOIKjdwKBoAAAAd/amazon-prime.gif"
+    >
+
+    <br>
+
+    <!-- BOTÃO -->
+    <button id="botao">
+        Kika Simplicio, tem recado para você! Clique e descubra. 😺
+    </button>
+
+    <!-- CARTA -->
+    <div id="carta">
+        <h2>Sim, ela aprontou de novo 👀</h2>
+        <p id="texto"></p>
+
+        <!-- FINAL -->
+        <div id="final">
+
+            <!-- MÚSICA SPOTIFY -->
+            <iframe
+                style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/2iUxWUv5TovjBmayOcWohB?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+
+            <!-- GATO FINAL -->
+            <img
+                id="gatinhoFinal"
+                src="https://media1.tenor.com/m/gA4KjL2c3JQAAAAC/cats-kisses.gif"
+            >
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const botao = document.getElementById("botao");
+const carta = document.getElementById("carta");
+const textoElemento = document.getElementById("texto");
+const final = document.getElementById("final");
+
+const mensagem = `Olá, belíssima mulher que não sai da minha cabeça, quer dizer, meu bem, tudo bem com você? Lá vou eu aprontar mais uma, e espero de coração que você não esteja comendo, pois fiquei com medo depois do meu último aprontamento kkkk.
+
+Kika, meu anjo, ontem eu vi que você havia entrado na call, meu coração disparou quando te vi, pois estou morrendo de saudades dos belos vocais e do sotaque mais lindo e gostoso que já pude ouvir, mas na hora que retornei você teve que sair, fiquei pensando que havia feito algo errado, mas lembrei que você estava passando mal e poderia ser isso.
+
+Hoje passei o dia pensando em você (pra variar), ouvindo músicas tristonhas pois achei que havia falhado de alguma forma contigo. Mas o intuito desse recado não é este, na verdade quero usar esse espaço pra reforçar algumas coisas e completar com mais!
+
+Recentemente eu sonhei com você, normalmente eu não tenho sonhos assim, geralmente são bem aleatórios, mas nesse dia o sonho foi tão bom e por ter você nele, parecia que eu conseguia sentir teu cheiro, o toque da sua pele, por mais que o sonho fosse curto, essa sensação passou, engraçado, né?! 
+
+Todos os dias fico matutando minha viagem e os momentos que podemos passar juntas, praia, jantar, ver as belezas da cidade, obviamente uma delas é você hehe, e essa beleza eu quero ver bem de perto, pois sou míope, não sei se você sabe cof cof. 
+
+No outro recado eu te disse o quanto a sua alma é iluminada e alegre, e hoje volto a ressaltar isso pois a luz que tu trouxe pra minha vida desde que nos conhecemos é capaz de iluminar um estádio! 
+
+Agora algo que eu não te falei, mas o dia que você me chamou de “meu bem”, eu fui no céu e voltei kkkk, eu amo quando você me trata com apelidinhos carinhosos, fico tal qual o menino Cirilo, todo tchubiraudaudau. É engraçado como você tem esse dom de me deixar ficar bobinha com cada coisa, olha aí o poder em mões que tu tem guria haha. E me apaixonar por você foi uma das melhores coisas que me aconteceu, meus dias ficaram mais belos, iluminados e felizes, você sempre me diz que eu sou sorte grande, mas e a sorte que eu tenho de me apaixonar por essa mulher incrível com os olhos castanhos mais belos, além de um sotaque encantador, acho que a sorte grande é minha hein, sem querer criar rivalidade u.u.
+
+Enfim, meu bem, esse recado é pra te dizer que eu não paro de pensar em nós, nos momentos que vamos viver, e quando eu te perturbo pedindo notícias sobre tua saúde, é porque me importo com você, com sua mãe, que espero que Dona Mary of Carm esteja bem também, releva minha encheção, é que minha cabeça fica fritando querendo saber o que passa kkkk. E queria terminar o recado com uma love song, essa letra é pedrada e é uma mini declaração, escute esse hit, se possível pensando em nós hehe, eu sempre escuto essa e lembro de você.
+
+Obrigada pela atenção, até o próximo aprontamento, beijinhos da sua loirinha aprontona de bsb 💖.`;
+
+botao.addEventListener("click", () => {
+
+    botao.style.display = "none";
+    document.getElementById("gatinhoIntro").style.display = "none";
+
+    /* FUNDO AMARELINHO */
+    document.body.style.background = "#fff9c4";
+
+    carta.style.display = "block";
+
+    iniciarDigitacao();
+});
+
+function iniciarDigitacao(){
+
+    let i = 0;
+
+    function digitar(){
+
+        if(i < mensagem.length){
+            textoElemento.textContent += mensagem.charAt(i);
+            i++;
+            setTimeout(digitar,35);
+        }
+        else{
+            final.style.display = "block";
+        }
+    }
+
+    digitar();
+}
+
+</script>
+
+</body>
+</html>
